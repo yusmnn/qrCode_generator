@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QrCode</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <center>
+        <h2>QrCode Generator</h2>
+      </center>
+      <center>
+        <img src="" id="img" />
+      </center>
+      <select name="size" id="size">
+        <option value="100">100x100</option>
+        <option value="150">150x150</option>
+        <option value="150" selected>200x200</option>
+        <option value="250">250x250</option>
+        <option value="300">300x300</option>
+      </select>
+      <br /><br />
+      <textarea id="qrtext" placeholder="Type text or link"></textarea>
+      <br /><br />
+      <input type="submit" value="Generate" onclick="genQR()" />
+      <p>Created with ❤️ by <a href="https://twitter.com/yusmnn" target="_blank">Yusman</a></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
